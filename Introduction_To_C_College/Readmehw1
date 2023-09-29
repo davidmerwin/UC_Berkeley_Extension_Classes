@@ -1,0 +1,63 @@
+# Exercise 1 C Program 
+
+## Description
+This program declares and initializes multiple variables, and then uses a formatted `printf()` function call to print them out in a formatted sentence. The variables are initialized with the following information:
+
+- First_name = "George"
+- Middle_Initial = 'T'
+- Last_name = "Clooney"
+- Year_born = 1961
+- Height_in_meters = 1.8
+- Net_worth_USD = 512345678
+
+And the formatted output is:
+
+```bash
+George T Clooney, born 1961, is 1.8 meters tall and is worth $512345678.
+```
+
+## Code
+
+```bash
+──────────────────────────────────────────────────────────────────────
+│ Module-One-Programming-Assignments
+│   └── Exercise-One-C-Program
+│       └── clooney.c
+├── README.md - Description, highlights and summary of the project
+──────────────────────────────────────────────────────────────────────
+```
+
+```c
+// Include the standard IO library
+#include <stdio.h>
+
+// The main function - Entry point of the program
+int main(void) {
+    // Declare and initialize the variables
+    char First_name[] = "George";
+    char Middle_Initial = 'T';
+    char Last_name[] = "Clooney";
+    int Year_born = 1961;
+    float Height_in_meters = 1.8;
+    long Net_worth_USD = 512345678;
+    
+    // Print the formatted sentence
+    printf("%s %c %s, born %d, is %.1f meters tall and is worth $%ld\n", First_name, Middle_Initial, Last_name, Year_born, Height_in_meters, Net_worth_USD);
+    
+    // Return statement of the main function
+    return 0;
+}
+```
+
+## Tags 
+C Programming, Variable Initialization, ANSI C Compliance, printf() Format Specifiers, User Interface, Data Types, Readability
+
+## People 
+- David Merwin - davidmerwin1992@gmail.com
+- David Jeffrey Merwin - merwin1992@protonmail.com
+
+## Related Links
+- [David Merwin's GitHub](https://davidmerwin.pieces.cloud/?p=40bb4cb6ae)
+
+## Submissions
+Each program in the repository should include a header comment similar to above, maintain "standard" C formatting and style, insert blank lines to separate "sections", indent statements within blocks of code, use calculations in separate statements and not embedded in `printf()`, includes comments within the code, a clear, informative, friendly user interface, ANSI C compatibility by using `int main()` and `return 0;`. Indicatively, the submission interface should make it clear with what the output represents to the user and provide example user inputs if necessary.
